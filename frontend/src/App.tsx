@@ -9,7 +9,7 @@ import { ScrollToTop } from './components/ScrollToTop'
 export default function App() {
   const handleDownloadResume = (fileUrl: string) => {
     const link = document.createElement('a');
-    link.href = fileUrl;         // <-- URL imported by Vite
+    link.href = fileUrl;       
     link.download = "Shabad_Mk_Resume.pdf";
     link.click();
   };

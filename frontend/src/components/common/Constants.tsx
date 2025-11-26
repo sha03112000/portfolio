@@ -33,3 +33,39 @@ export const skills = [
   { name: 'Laravel', color: 'from-red-400 to-red-500', icon: DiLaravel },
   { name: 'Django', color: 'from-green-400 to-green-500', icon: DiDjango },
 ];
+
+
+export const projects = [
+  {
+    title: 'E-Commerce Dashboard',
+    description: 'A full-featured admin dashboard with analytics, inventory management, and real-time updates.',
+    image: 'https://images.unsplash.com/photo-1665470909939-959569b20021?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBhcHBsaWNhdGlvbiUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NjQwNzg5MTl8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    github: 'https://github.com/yourusername/project',
+    demo: 'https://project-demo.com',
+    tags: ['React', 'Node.js', 'MongoDB'],
+  },
+  {
+    title: 'Gadget Stock WebApp',
+    description: 'Inventory management system for tracking and managing gadget stocks in real-time.',
+    image: 'https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY0MTIzMjc0fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    github: 'https://github.com/yourusername/project',
+    demo: 'https://project-demo.com',
+    tags: ['React', 'TypeScript', 'Node.js', 'MongoDB'],
+  },
+  {
+    title: 'Code Collaboration Tool',
+    description: 'Real-time code editor with collaboration features and syntax highlighting.',
+    image: 'https://images.unsplash.com/photo-1724260793422-7754e5d06fbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RlJTIwZGV2ZWxvcG1lbnQlMjBzY3JlZW58ZW58MXx8fHwxNzY0MTE4NTE2fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    github: 'https://github.com/yourusername/project',
+    demo: 'https://project-demo.com',
+    tags: ['TypeScript', 'WebSocket', 'Redis'],
+  },
+  {
+    title: 'Task Management System',
+    description: 'Modern task and project management platform with team collaboration features.',
+    image: 'https://images.unsplash.com/photo-1758762641372-e3b52bf061d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNoJTIwd29ya3NwYWNlfGVufDF8fHx8MTc2NDA2NjIxMnww&ixlib=rb-4.1.0&q=80&w=1080',
+    github: 'https://github.com/yourusername/project',
+    demo: 'https://project-demo.com',
+    tags: ['Next.js', 'PostgreSQL', 'Prisma'],
+  },
+];
