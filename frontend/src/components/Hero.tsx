@@ -3,7 +3,7 @@
 import { ImageWithFallback } from './common/ImageFallBack';
 import { useEffect, useState } from 'react';
 import shabadImage  from '../assets/shabad_img.png';
-import Resume from '../assets/Shabad_Mk_Resume.pdf';
+import Resume from '../assets/Shabad_MK_Resume.pdf';
 import { socialLinks } from './common/Constants';
 
 interface HeroProps {
