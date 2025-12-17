@@ -5,6 +5,11 @@ import {
   DiMysql, DiJavascript, DiPostgresql, DiBootstrap,
   DiLaravel, DiDjango, DiGit, DiHtml5, DiCss3
 } from 'react-icons/di';
+import autohead from '../../assets/projectImg/autohead.png';
+import gadgetInventory from '../../assets/projectImg/gadget-inventory.png';
+
+
+
 
 
 export const socialLinks = [
@@ -37,35 +42,35 @@ export const skills = [
 
 export const projects = [
   {
-    title: 'E-Commerce Dashboard',
+    title: 'Auto Head Car Acessories',
     description: 'A full-featured admin dashboard with analytics, inventory management, and real-time updates.',
-    image: 'https://images.unsplash.com/photo-1665470909939-959569b20021?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBhcHBsaWNhdGlvbiUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NjQwNzg5MTl8MA&ixlib=rb-4.1.0&q=80&w=1080',
-    github: 'https://github.com/yourusername/project',
-    demo: 'https://project-demo.com',
-    tags: ['React', 'Node.js', 'MongoDB'],
+    image: autohead,
+    github: 'https://github.com/sha03112000/autohead',
+    demo: '',
+    tags: ['React', 'Django', 'PostgresQL', 'Tailwind CSS'],
   },
   {
     title: 'Gadget Stock WebApp',
     description: 'Inventory management system for tracking and managing gadget stocks in real-time.',
-    image: 'https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY0MTIzMjc0fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    github: 'https://github.com/yourusername/project',
+    image: gadgetInventory,
+    github: 'https://github.com/sha03112000/gadget_inventory',
     demo: 'https://project-demo.com',
     tags: ['React', 'TypeScript', 'Node.js', 'MongoDB'],
   },
   {
-    title: 'Code Collaboration Tool',
-    description: 'Real-time code editor with collaboration features and syntax highlighting.',
+    title: 'Counselling Platform',
+    description: 'Online platform for counseling and psychological services.',
     image: 'https://images.unsplash.com/photo-1724260793422-7754e5d06fbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RlJTIwZGV2ZWxvcG1lbnQlMjBzY3JlZW58ZW58MXx8fHwxNzY0MTE4NTE2fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    github: 'https://github.com/yourusername/project',
-    demo: 'https://project-demo.com',
-    tags: ['TypeScript', 'WebSocket', 'Redis'],
+    github: '',
+    demo: '',
+    tags: ['TypeScript', 'Node.js', 'MongoDB', 'React', 'Tailwind CSS'],
   },
   {
-    title: 'Task Management System',
-    description: 'Modern task and project management platform with team collaboration features.',
+    title: 'Mini ERP System',
+    description: 'A simple ERP system for managing sales and inventory.',
     image: 'https://images.unsplash.com/photo-1758762641372-e3b52bf061d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNoJTIwd29ya3NwYWNlfGVufDF8fHx8MTc2NDA2NjIxMnww&ixlib=rb-4.1.0&q=80&w=1080',
-    github: 'https://github.com/yourusername/project',
-    demo: 'https://project-demo.com',
-    tags: ['Next.js', 'PostgreSQL', 'Prisma'],
+    github: '',
+    demo: '',
+    tags: ['Laravel', 'Bootstrap', 'MySQL'],
   },
 ];

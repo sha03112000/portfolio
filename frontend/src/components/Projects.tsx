@@ -1,4 +1,4 @@
-import { ExternalLink, FolderOpen } from 'lucide-react';
+import { FolderOpen } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import { ImageWithFallback } from './common/ImageFallBack';
 import { useEffect, useRef, useState } from 'react';
@@ -29,15 +29,14 @@ export function Projects() {
     };
   }, []);
 
-  
+
 
   return (
-    <section 
-      id="projects" 
+    <section
+      id="projects"
       ref={sectionRef}
-      className={`py-24 px-4 bg-gradient-to-b from-slate-50 to-white transition-all duration-1000 ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-      }`}
+      className={`py-24 px-4 bg-gradient-to-b from-slate-50 to-white transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
@@ -65,7 +64,7 @@ export function Projects() {
               {/* Gradient border effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 
                             opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl -z-10"></div>
-              
+
               {/* Image container */}
               <div className="relative h-56 overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200">
                 <ImageWithFallback
@@ -74,7 +73,7 @@ export function Projects() {
                   className="w-full h-full object-cover transition-transform duration-700 
                            group-hover:scale-110"
                 />
-                
+
                 {/* Overlay on hover */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent 
                               opacity-0 group-hover:opacity-100 transition-all duration-500
@@ -84,18 +83,18 @@ export function Projects() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="p-6 space-y-4">
                 <h3 className="text-slate-900 group-hover:text-transparent group-hover:bg-clip-text 
                              group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600
                              transition-all duration-300">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-slate-600 leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
@@ -108,21 +107,23 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
-                
-                <div className="flex gap-3 pt-2">
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white 
+
+                {
+                  project.github ? (
+                    <div className="flex gap-3 pt-2">
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white 
                              px-4 py-3 rounded-xl hover:shadow-xl
                              transition-all duration-300 hover:scale-105
                              flex items-center justify-center gap-2 group/btn"
-                  >
-                    <ExternalLink className="w-4 h-4 group-hover/btn:rotate-45 transition-transform duration-300" />
-                    View Live
-                  </a>
-                  <a
+                      >
+                        <FaGithub className="w-4 h-4 group-hover/btn:rotate-45 transition-transform duration-300" />
+                        Code
+                      </a>
+                      {/* <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -132,8 +133,20 @@ export function Projects() {
                   >
                     <FaGithub className="w-4 h-4" />
                     Code
-                  </a>
-                </div>
+                  </a> */}
+                    </div>
+                  ) : (
+                    <div className="flex items-center gap-2 pt-2">
+                      <span className="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">
+                        Private Project
+                      </span>
+                      <p className="text-sm text-slate-500">
+                        Code and live demo are restricted due to confidentiality.
+                      </p>
+                    </div>
+                  )
+                }
+
               </div>
 
               {/* Glassmorphism effect on card */}
