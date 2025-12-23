@@ -2,8 +2,8 @@
 
 import { ImageWithFallback } from './common/ImageFallBack';
 import { useEffect, useState } from 'react';
-import shabadImage  from '../assets/shabad_img.png';
-import Resume from '../assets/ShabadMK_Resume_2025.pdf';
+import shabadImage  from '../assets/smk.png';
+import Resume from '../assets/Resume.pdf';
 import { socialLinks } from './common/Constants';
 
 interface HeroProps {

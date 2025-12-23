@@ -10,7 +10,7 @@ export default function App() {
   const handleDownloadResume = (fileUrl: string) => {
     const link = document.createElement('a');
     link.href = fileUrl;       
-    link.download = "ShabadMK_Resume_2025.pdf";
+    link.download = "Resume.pdf";
     link.click();
   };
 
